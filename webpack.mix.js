@@ -18,6 +18,7 @@ const mix = require("laravel-mix");
 //         require('autoprefixer'),
 //     ]);
 
+mix.setResourceRoot("");
 mix.copyDirectory("node_modules/intl-tel-input/build/img", "public/assets/img");
 mix.copyDirectory(["resources/assets/images"], "public/assets/images");
 
@@ -85,6 +86,7 @@ mix.scripts(
 
 mix.js(
     "resources/assets/js/auth/auth.js",
+    "resources/assets/js/livewire-turbolinks.js",
     "public/assets/js/auth/auth.js"
 ).version();
 

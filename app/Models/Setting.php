@@ -101,7 +101,7 @@ class Setting extends Model implements HasMedia
         'city' => 'nullable|required_with:show_additional_address_in_invoice',
         'zipcode' => 'nullable|required_with:show_additional_address_in_invoice',
         'fax_no' => 'nullable|required_with:show_additional_address_in_invoice',
-        'gst_no' => 'nullable|alpha_num|size:15',
+        'gst_no' => 'nullable|alpha_num',
     ];
 
     public function getLogoUrlAttribute(): string
