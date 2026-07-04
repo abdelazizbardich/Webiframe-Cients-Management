@@ -12,7 +12,7 @@ class UserTable extends LivewireTableComponent
 {
     protected $model = User::class;
 
-    protected string $tableName = 'users';
+    public string $tableName = 'users';
 
     protected $listeners = ['resetPageTable'];
 

@@ -10,7 +10,7 @@ class ClientTable extends LivewireTableComponent
 {
     protected $model = Client::class;
 
-    protected string $tableName = 'clients';
+    public string $tableName = 'clients';
 
     // for table header button
     public $showButtonOnHeader = true;
