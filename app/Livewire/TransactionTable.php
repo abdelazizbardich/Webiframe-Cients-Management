@@ -8,6 +8,9 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 
 class TransactionTable extends LivewireTableComponent
 {
+
+    public $getTableName = 'transactions';
+
     protected $model = Payment::class;
 
     protected string $tableName = 'payments';
@@ -24,6 +27,11 @@ class TransactionTable extends LivewireTableComponent
 
     public array $dateRange = [];
 
+    public function getTableName()
+    {
+        return 'transactions';
+    }
+    
     public function configure(): void
     {
         $this->setPrimaryKey('id');
